@@ -47,5 +47,5 @@ pipenv run py main.py
 Requirements for building are:
 <ul>
 <li>Buildozer</li>
-<li>Linux Virtual Machine</li>
+<li>Ubuntu Virtual Machine</li>
 </ul>
