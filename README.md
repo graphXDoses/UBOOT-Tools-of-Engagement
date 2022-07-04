@@ -34,7 +34,7 @@ After cloning the repository, open a cmd and create a pipenv virtual environment
 ```
 pipenv shell
 ```
-After the virtual environment has been created, run this:
+After the virtual environment has been created, install dependencies:
 ```
 pipenv install
 ```
