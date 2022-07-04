@@ -1,0 +1,11 @@
+# Exclude Directories
+.buildozer/
+.vs/
+Nomogram_Project_Files/
+Protect/
+
+# Exclude Files
+*.user
+src/shaders/fan.glsl
+src/shaders/fan_o.glsl
+src/shaders/test_glsl.py
