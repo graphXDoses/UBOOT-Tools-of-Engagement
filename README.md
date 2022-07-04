@@ -3,7 +3,7 @@ This is a small application for android, designed to help subsimers have a more 
 
 It uses the Kivy framework and it is solely writen in Python and custom (OpenGL)GLSL shaders.
 
-# Details - Historical Relevancy
+# Details - Historical Relevance
 The application comprises of two seperate tools, the "Angriffsscheibe" or "Attack Disc" and the "Sliderule disc". Their purpose was to help officers locate and intercept allied convoy groups and even determine a correct gyroangle for early war torpedoes, which were notorious for having unreliable means of setting that with the TDC or Target Data Computer - an analog computer housed onboard the submarine for that purpose -.
 
 The "Attack Disc" - which is the first tool a user is greeted upon using the application - is an enhanced version of a compass. It encorporates several smaller discs that - in simple terms - provide the heading of own ship and a bearing indicating the direction of a target. With that information another disc triangulates the actual course of the target.
