@@ -1,14 +1,14 @@
 # Overview
-This is a small android application, designed to help subsimers have a more realistic experience commanding a WWII submarine. It is a collection of digitally analog(they interact as their real counterparts, but are rasterized) representations of navigation tools of 1939-1944 era, with the intension of simulating the difficulty of peforming trigonometric and other calculations as quickly/reliably as possible.
+This is a small android application, designed to help subsimers have a more realistic experience commanding a WWII german submarine. It is a collection of digitally analog(they interact as their real counterparts, but are rasterized) representations of navigation tools of 1939-1944 era, with the intension of simulating the difficulty of peforming trigonometric and other calculations as quickly/reliably as possible.
 
 It uses the Kivy framework and it is solely writen in Python and custom (OpenGL)GLSL shaders.
 
 # Details - Historical Relevance
-The application comprises of two seperate tools, the "Angriffsscheibe" or "Attack Disc" and the "Sliderule disc". Their purpose was to help officers locate and intercept allied convoy groups and even determine a correct gyroangle for early war torpedoes, which were notorious for having unreliable means of setting that with the TDC or Target Data Computer - an analog computer housed onboard the submarine for that purpose -.
+The application comprises of two seperate tools, the "Angriffsscheibe" or "Attack Disc" and the "Sliderule Disc". Their purpose was to help officers locate and intercept allied convoy groups and even determine a correct gyroangle for early war torpedoes, which were notorious for having unreliable means of setting that with the TDC or Target Data Computer - an analog computer housed onboard the submarine for that purpose -.
 
 The "Attack Disc" - which is the first tool a user is greeted upon using the application - is an enhanced version of a compass. It encorporates several smaller discs that - in simple terms - provide the heading of own ship and a bearing indicating the direction of a target. With that information another disc triangulates the actual course of the target.
 
-The "Sliderule disc" is a logarithmic scale calculator. It encorporates an inner disc and a pointer. The outter disc represents values of the sin function in degrees while the inner disc has markings for speed in knots and distance in meters. The pointer has markings related to time and as it rotates it performs mathematical operations
+The "Sliderule Disc" is a logarithmic scale calculator. It encorporates an inner disc and a pointer. The outter disc represents values of the sin function in degrees while the inner disc has markings for speed in knots and distance in meters. The pointer has markings related to time and as it rotates it performs mathematical operations
 (primarely multiplication and division). The true power of this tool lies on the abstruction of calculations with regards to scale (thanks to the log), the minimal error and the blazing speed of producing results. Some of the common calculations done utilizing this tool were:
 <ul>
   <li>
