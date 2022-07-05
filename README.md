@@ -27,6 +27,7 @@ The combination of those two tools gave accurate enough information for the offi
 # Testing
 Requirements for testing localy are:
 <ul>
+<li>Python3</li>
 <li>Pipenv</li>
 </ul>
 
