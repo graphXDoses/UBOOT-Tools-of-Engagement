@@ -1,5 +1,5 @@
 # Overview
-This is a small application for android, designed to help subsimers have a more realistic experience commanding a WWII submarine. It is a collection of digitally analog(they interact as their real counterparts, but are rasterized) representations of navigation tools of 1939-1944 era, with the intension of simulating the difficulty of peforming trigonometric and other calculations as quickly/reliably as possible.
+This is a small android application, designed to help subsimers have a more realistic experience commanding a WWII submarine. It is a collection of digitally analog(they interact as their real counterparts, but are rasterized) representations of navigation tools of 1939-1944 era, with the intension of simulating the difficulty of peforming trigonometric and other calculations as quickly/reliably as possible.
 
 It uses the Kivy framework and it is solely writen in Python and custom (OpenGL)GLSL shaders.
 
