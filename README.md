@@ -34,9 +34,9 @@ After cloning the repository, open a cmd and create a pipenv virtual environment
 ```
 pipenv shell
 ```
-After the virtual environment has been created, install dependencies:
+After the virtual environment has been created, install Kivy-base and dependencies:
 ```
-pipenv install
+pipenv run python -m pip install "kivy[base]"
 ```
 To run the main.py make sure it is done through the virtual environment like this:
 ```
