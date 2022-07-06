@@ -47,6 +47,8 @@ pipenv run py main.py
 # Building
 Requirements for building are:
 <ul>
-<li>Buildozer</li>
-<li>Ubuntu Virtual Machine</li>
+<li>Windows Subsystem for Linux (WSL)</li>
+<li>Ubuntu Terminal</li>
+<li>Python3 (on WSL)</li>
+<li>Buildozer (on WSL)</li>
 </ul>
