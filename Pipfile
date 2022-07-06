@@ -6,7 +6,6 @@ name = "pypi"
 [dev-packages]
 
 [packages]
-Kivy = "==2.0.0"
 
 [requires]
 python_version = "3.9"
