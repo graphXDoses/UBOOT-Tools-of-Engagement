@@ -6,7 +6,7 @@ from src.constants.UI import CONTEXT_POOL
 from src.constants.EventNames import EVENTS
 from src.constants.Colors import BUTTON_ILLUMINATION_BACKGROUND_COLOR
 from src.lib.EventBus import EventBus
-from src.tools.Buttons.ButtonFactory import ButtonFactory
+from src.components.Buttons.ButtonFactory import ButtonFactory
 
 
 class ControlsLayout(BoxLayout):

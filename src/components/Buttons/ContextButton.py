@@ -3,7 +3,7 @@ from kivy.graphics import Color, Rectangle
 from src.constants.UI import CONTEXT_POOL, default_context
 from src.constants.EventNames import EVENTS
 from src.lib.EventBus import EventBus
-from src.tools.Buttons.ButtonModel import Button
+from src.components.Buttons.ButtonModel import Button
 
 class ContextButton(Button):
 

@@ -1,5 +1,5 @@
-from src.tools.RAOBF.Parts.Entity import Entity
-from src.tools.RAOBF.Parts.PartModel import PartModel
+from src.components.RAOBF.Parts.Entity import Entity
+from src.components.RAOBF.Parts.PartModel import PartModel
 from src.constants.RaobfNames import RB, CR, TD, BALA, ACP
 from src.constants.Images import IMAGES
 from src.constants.EventNames import EVENTS

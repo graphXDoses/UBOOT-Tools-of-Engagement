@@ -7,7 +7,7 @@ from src.constants.Colors import (
 )
 from src.constants.EventNames import EVENTS
 from src.lib.EventBus import EventBus
-from src.tools.Buttons.ButtonModel import Button
+from src.components.Buttons.ButtonModel import Button
 
 class LinkFocusButton(Button):
 

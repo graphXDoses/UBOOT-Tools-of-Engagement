@@ -51,5 +51,5 @@ void main() {
 
     vec3 color = max(bg, icon);
 
-    gl_FragColor = vec4(color, 1.);
+    gl_FragColor = vec4(color, 1);
 }

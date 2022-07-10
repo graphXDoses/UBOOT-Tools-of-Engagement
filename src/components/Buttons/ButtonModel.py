@@ -29,7 +29,8 @@ class Button(ButtonSchema):
                 (b'vCardinalUv', 2, 'float'),
                 (b'vTexCoords0', 2, 'float')
             )
-            self.canvas["hasFocus"] = 0.0
+
+            self.canvas["hasFocus"]      = 0.0
             self.canvas["bg_color_norm"] = BUTTON_NORMAL_BACKGROUND_COLOR
             self.canvas["bg_color_on"]   = BUTTON_ILLUMINATION_BACKGROUND_COLOR
 

@@ -1,5 +1,5 @@
 from src.constants.EventNames import EVENTS
-from src.tools.Layouts.InfoLayout import InfoLayout
+from src.components.Layouts.InfoLayout import InfoLayout
 
 class InfoContext(InfoLayout):
 

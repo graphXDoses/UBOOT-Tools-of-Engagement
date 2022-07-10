@@ -1,21 +1,21 @@
-from kivy.uix.button import Button as Proto
+from kivy.uix.button import Button as PlainBTN
 from src.constants.RaobfNames import *
 from src.constants.UI import CONTEXT_POOL, not_assigned
 from src.constants.Images import IMAGES
 from src.constants.EventNames import EVENTS
 from src.lib.AppConfig import AppConfig
 from src.lib.EventBus import EventBus
-from src.tools.Buttons.FocusButton import FocusButton
-from src.tools.Buttons.LinkFocusButton import LinkFocusButton
-from src.tools.Buttons.ResetButton import ResetButton
-from src.tools.Buttons.ContextButton import ContextButton
+from src.components.Buttons.FocusButton import FocusButton
+from src.components.Buttons.LinkFocusButton import LinkFocusButton
+from src.components.Buttons.ResetButton import ResetButton
+from src.components.Buttons.ContextButton import ContextButton
 
 class ButtonFactory:
 
     def helpContext(self):
         self.buttons = list()
 
-        self.buttons.append(Proto(text="Help"))
+        self.buttons.append(PlainBTN(text="Help"))
         self.buttons.append(ContextButton(source=(IMAGES.CONTEXT.FRONT, IMAGES.CONTEXT.BACK)))
 
         return self.buttons

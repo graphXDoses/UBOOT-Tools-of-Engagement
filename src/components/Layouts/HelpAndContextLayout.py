@@ -4,7 +4,7 @@ from kivy.vector import Vector
 from src.constants.EventNames import EVENTS
 from src.constants.Colors import BUTTON_ILLUMINATION_BACKGROUND_COLOR
 from src.lib.EventBus import EventBus
-from src.tools.Buttons.ButtonFactory import ButtonFactory
+from src.components.Buttons.ButtonFactory import ButtonFactory
 
 
 class HelpAndContextLayout(BoxLayout):
