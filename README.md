@@ -27,6 +27,7 @@ The combination of those two tools gave accurate enough information for the offi
 # Testing
 Requirements for testing localy are:
 <ul>
+<li>Python3</li>
 <li>Pipenv</li>
 </ul>
 
@@ -34,9 +35,9 @@ After cloning the repository, open a cmd and create a pipenv virtual environment
 ```
 pipenv shell
 ```
-After the virtual environment has been created, install dependencies:
+After the virtual environment has been created, install Kivy-base and dependencies:
 ```
-pipenv install
+pipenv run python -m pip install "kivy[base]"
 ```
 To run the main.py make sure it is done through the virtual environment like this:
 ```
@@ -46,6 +47,8 @@ pipenv run py main.py
 # Building
 Requirements for building are:
 <ul>
-<li>Buildozer</li>
-<li>Ubuntu Virtual Machine</li>
+<li>Windows Subsystem for Linux (WSL)</li>
+<li>Ubuntu Terminal</li>
+<li>Python3 (on WSL)</li>
+<li>Buildozer (on WSL)</li>
 </ul>
