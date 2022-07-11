@@ -17,6 +17,7 @@ class ToolsAreaWidget(BoxLayout):
         self.slideRuleDisc  = SlideRuleDisc(CONTEXT_POOL.SLIDE_RULE_DISC)
         self.activeSide     = None
         self.rootVector     = self.attackDisc.center
+        self.regTouch       = None
 
         EventBus.on(EVENTS.CHANGE_CONTEXT, self.__changeContext)
 
@@ -34,15 +35,19 @@ class ToolsAreaWidget(BoxLayout):
             self.activeSide = self.slideRuleDisc
 
     def on_touch_down(self, touch):
-        self.cardinalVector = Vector(touch.x, touch.y) - self.rootVector
+        if self.regTouch is None:
+            self.cardinalVector = Vector(touch.x, touch.y) - self.rootVector
+            self.regTouch = touch
 
     def on_touch_move(self, touch):
-        v = Vector(touch.x, touch.y) - self.rootVector
-        angle = -self.cardinalVector.angle(v)
-        if self.hasSnapOn:
-            self.activeSide.rotate(round(angle))
-        else:
-            self.activeSide.rotate(angle)
+        if not self.regTouch is None:
+            v = Vector(self.regTouch.x, self.regTouch.y) - self.rootVector
+            angle = -self.cardinalVector.angle(v)
+            if self.hasSnapOn:
+                self.activeSide.rotate(round(angle))
+            else:
+                self.activeSide.rotate(angle)
 
     def on_touch_up(self, touch):
+        self.regTouch = None
         self.activeSide.updateAngle()

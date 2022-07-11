@@ -9,6 +9,8 @@ attribute vec2 vPosition;
 attribute vec2 vCardinalUv;
 attribute vec2 vTexCoords0;
 
+//uniform float offsetX;
+//uniform float offsetY;
 uniform mat4 projection_mat;
 
 varying vec2 tex_coord0;
@@ -17,6 +19,7 @@ varying vec2 uv;
 void main() {
     tex_coord0 = vTexCoords0;
     uv = vCardinalUv;
+    //gl_Position = projection_mat * vec4(vPosition + vec2(offsetX, offsetY), 0.0, 1.0);
     gl_Position = projection_mat * vec4(vPosition, 0.0, 1.0);
 }
 

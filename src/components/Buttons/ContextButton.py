@@ -3,6 +3,7 @@ from kivy.graphics import Color, Rectangle
 from src.constants.UI import CONTEXT_POOL, default_context
 from src.constants.EventNames import EVENTS
 from src.lib.EventBus import EventBus
+from src.lib.Utils import Cycler
 from src.components.Buttons.ButtonModel import Button
 
 class ContextButton(Button):
@@ -11,7 +12,7 @@ class ContextButton(Button):
         super(ContextButton, self).__init__(source, useShaders=False)
         self.frontSide      = source[0]
         self.backSide       = source[1]
-        self.context        = self.flip()
+        self.getNextContext = Cycler([CONTEXT_POOL.ATTACK_DISC, CONTEXT_POOL.SLIDE_RULE_DISC], 1)
         self.currentContext = default_context
         self.currentImage   = self.backSide
 
@@ -20,16 +21,9 @@ class ContextButton(Button):
 
         self.nextDraw()
 
-    def flip(self):
-        n = 0
-        pool = [CONTEXT_POOL.ATTACK_DISC, CONTEXT_POOL.SLIDE_RULE_DISC]
-        while 1:
-            n += 1
-            yield pool[n % 2]
-
     @staticmethod
     def changeContext(i=None):
-        EventBus.trigger(EVENTS.CHANGE_CONTEXT, next(i.context))
+        EventBus.trigger(EVENTS.CHANGE_CONTEXT, i.getNextContext())
 
     def __changeContextCallback(self, context):
         if context == CONTEXT_POOL.ATTACK_DISC:

@@ -25,7 +25,7 @@ class MainView(Screen):
         infoButtons   = InfoButtons()
 
         EventBus.trigger(EVENTS.CHANGE_CONTEXT, default_context)
-        helpContextConfigArea.children[0].children[0].flip()
+        helpContextConfigArea.children[0].children[0].getNextContext()
 
         rootWidget.add_widget(infoContext)
         rootWidget.add_widget(helpContextConfigArea)

@@ -3,7 +3,7 @@ from src.constants.RaobfNames import *
 from src.lib.jsDictionary import JSDictionary
 from src.lib.fixedASRImage import FixedASRImage
 
-buttons = Atlas("src/art/buttons.atlas")
+buttons = Atlas("src/art/Buttons/buttons.atlas")
 
 IMAGES = JSDictionary({
     "ATTACK_DISC" : JSDictionary({
@@ -25,7 +25,8 @@ IMAGES = JSDictionary({
         "TD"      : buttons["TD"],
         "BALA"    : buttons["BALA"],
         "ACP"     : buttons["ACP"],
-        "RESET"   : buttons["RESET"]
+        "RESET"   : buttons["RESET"],
+        "HELP"    : buttons["HELP"]
     }),
 
     "CONTEXT" : JSDictionary({

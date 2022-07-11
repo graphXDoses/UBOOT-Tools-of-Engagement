@@ -20,6 +20,7 @@ class Button(ButtonSchema):
             self.source = source
         self.currentImage = self.source
 
+
         if useShaders:
             self.canvas = RenderContext(use_parent_projection=True)
             self.canvas.shader.source = 'src/shaders/button.glsl'
@@ -30,11 +31,18 @@ class Button(ButtonSchema):
                 (b'vTexCoords0', 2, 'float')
             )
 
+            #self.canvas["offsetX"]       = 0.0
+            #self.canvas["offsetY"]       = 0.0
             self.canvas["hasFocus"]      = 0.0
             self.canvas["bg_color_norm"] = BUTTON_NORMAL_BACKGROUND_COLOR
             self.canvas["bg_color_on"]   = BUTTON_ILLUMINATION_BACKGROUND_COLOR
 
-        self.nextDraw()
+        if self.currentImage is None:
+            self.build_mesh = None
+            self.syncValues = None
+            self.nextDraw   = None
+        else:
+            self.nextDraw()
 
     def build_mesh(self):
         tc = self.currentImage.tex_coords
@@ -44,6 +52,7 @@ class Button(ButtonSchema):
             self.pos[0]+self.size[0], self.size[1]+self.pos[1], 1, 1, tc[4], tc[5],
             self.pos[0], self.size[1]+self.pos[1], 1, 0, tc[6], tc[7]
         ]
+
         indices = [0, 1, 2, 3]
         return Mesh(vertices=vertices, indices=indices, mode='triangle_fan', fmt=self.vfmt, texture=self.currentImage)
 
