@@ -17,7 +17,7 @@ class ViewManager(ScreenManager):
 
         self.add_widget(MainView(name=VIEWS_POOL.MAINVIEW))
         self.add_widget(SettingsView(name=VIEWS_POOL.SETTINGSVIEW))
-
+        
         EventBus.trigger(EVENTS.CHANGE_VIEW, default_view)
 
     def __changeView(self, view):

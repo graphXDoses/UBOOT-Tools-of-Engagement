@@ -1,4 +1,4 @@
-from src.lib.AppConfig import AppConfig
+#from src.lib.AppConfig import AppConfig
 from kivy.app import App
 from kivy.core.window import Window
 from src.views.ViewManager import ViewManager

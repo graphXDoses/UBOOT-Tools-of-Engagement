@@ -15,4 +15,5 @@ class EventModel:
     def removeObserver(self, observer:str)->None:
         if not self.hasObserver(observer):
             return
-        self._observers.pop(observer)
+        idx = self._observers.index(observer)
+        self._observers.pop(idx)

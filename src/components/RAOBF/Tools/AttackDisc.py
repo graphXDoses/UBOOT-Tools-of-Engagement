@@ -9,8 +9,7 @@ from src.lib.EventBus import EventBus
 class AttackDisc(PartModel):
 
     def __init__(self, context):
-        super().__init__()
-        self.context = context
+        super().__init__(context)
 
         self._RB   = Entity(
             IMAGES.ATTACK_DISC.RB,

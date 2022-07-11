@@ -9,8 +9,7 @@ from src.lib.EventBus import EventBus
 class SlideRuleDisc(PartModel):
 
     def __init__(self, context):
-        super().__init__()
-        self.context = context
+        super().__init__(context)
 
         self._AOB   = Entity(
             IMAGES.SLIDE_RULE_DISC.AOB,

@@ -1,6 +1,7 @@
 # Exclude Directories
 .buildozer/
 .vs/
+bin/
 Nomogram_Project_Files/
 Protect/
 

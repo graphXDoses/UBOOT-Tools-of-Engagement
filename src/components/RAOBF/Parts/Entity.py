@@ -15,15 +15,14 @@ class Entity(FixedASRImage):
         self.__rectAngle = self.__rotation.angle
 
         if not self.isFixed:
-            initAngle = AppConfig.getInitAngle(self.name)
             EventBus.on(EVENTS.RESET, self.__resetCallback)
-        # with self.canvas:
-        if not self.isFixed:
-            if initAngle != 0:
-                self.rotateBy(initAngle)
-                self.updateAngle()
+
         self.bind(center=self.redraw)
         self.canvas.ask_update()
+
+    @property
+    def getAngle(self):
+        return self.__rectAngle
 
     def redraw(self, *args):
         self.center = self.parent.center
