@@ -2,7 +2,7 @@
 
 RB   = "Relative Bearing"
 CR   = "Compass Rose"
-TD   = "Target Disc"
+TG   = "Target Disc"
 BALA = "Bearing and Lead Angle"
 ACP  = "Attack Course Pointer"
 

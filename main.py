@@ -1,4 +1,6 @@
-#from src.lib.AppConfig import AppConfig
+from kivy.config import Config
+Config.set('modules', 'monitor', '')
+
 from kivy.app import App
 from kivy.core.window import Window
 from src.views.ViewManager import ViewManager

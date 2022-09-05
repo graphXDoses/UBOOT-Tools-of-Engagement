@@ -1,4 +1,6 @@
 from kivy.clock import mainthread
+from kivy.uix.screenmanager import Screen
+from kivy.vector import Vector
 from kivy.uix.button import Button as ButtonSchema
 from kivy.graphics.instructions import RenderContext
 from kivy.graphics import Mesh
@@ -13,6 +15,7 @@ class Button(ButtonSchema):
 
     def __init__(self, source, useShaders=True):
         super(Button, self).__init__()
+        self.always_release = True
         try:
             if len(source) > 0:
                 self.source = source[0]
@@ -22,6 +25,8 @@ class Button(ButtonSchema):
 
 
         if useShaders:
+            self.parentScreen = None
+            self.offset = Vector((0, 0))
             self.canvas = RenderContext(use_parent_projection=True)
             self.canvas.shader.source = 'src/shaders/button.glsl'
 
@@ -70,3 +75,10 @@ class Button(ButtonSchema):
             self.pos[0]+self.size[0], self.size[1]+self.pos[1], 1, 1, tc[4], tc[5],
             self.pos[0], self.size[1]+self.pos[1], 1, 0, tc[6], tc[7]
         ]
+
+    @staticmethod
+    def __getParentScreen(obj, iterNum=0):
+        if not obj.parent is None and iterNum < 4:
+            if isinstance(obj.parent, Screen): return obj.parent
+            iterNum += 1
+            self.__getParentScreen(obj.parent, iterNum)

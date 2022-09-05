@@ -6,6 +6,7 @@ Nomogram_Project_Files/
 Protect/
 
 # Exclude Files
+invokeEmulator.sh
 *.user
 src/shaders/fan.glsl
 src/shaders/fan_o.glsl

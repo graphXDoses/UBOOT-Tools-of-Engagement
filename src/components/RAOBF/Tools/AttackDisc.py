@@ -1,6 +1,6 @@
 from src.components.RAOBF.Parts.Entity import Entity
 from src.components.RAOBF.Parts.PartModel import PartModel
-from src.constants.RaobfNames import RB, CR, TD, BALA, ACP
+from src.constants.RaobfNames import RB, CR, TG, BALA, ACP
 from src.constants.Images import IMAGES
 from src.constants.EventNames import EVENTS
 from src.lib.EventBus import EventBus
@@ -22,9 +22,9 @@ class AttackDisc(PartModel):
             name = CR,
             context = self.context
         )
-        self._TD   = Entity(
-            IMAGES.ATTACK_DISC.TD,
-            name = TD,
+        self._TG   = Entity(
+            IMAGES.ATTACK_DISC.TG,
+            name = TG,
             context = self.context
         )
         self._BALA = Entity(
@@ -41,7 +41,7 @@ class AttackDisc(PartModel):
         for ent in [
             self._RB,
             self._CR,
-            self._TD,
+            self._TG,
             self._BALA,
             self._ACP
         ]:

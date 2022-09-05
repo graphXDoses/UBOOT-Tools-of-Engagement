@@ -9,7 +9,7 @@ IMAGES = JSDictionary({
     "ATTACK_DISC" : JSDictionary({
         "RB"   : "src/art/FrontSide/{}.png".format("_".join(RB.split(" "))),
         "CR"   : "src/art/FrontSide/{}.png".format("_".join(CR.split(" "))),
-        "TD"   : "src/art/FrontSide/{}.png".format("_".join(TD.split(" "))),
+        "TG"   : "src/art/FrontSide/{}.png".format("_".join(TG.split(" "))),
         "BALA" : "src/art/FrontSide/{}.png".format("_".join(BALA.split(" "))),
         "ACP"  : "src/art/FrontSide/{}.png".format("_".join(ACP.split(" ")))
     }),
@@ -22,7 +22,7 @@ IMAGES = JSDictionary({
 
     "BUTTONS" : JSDictionary({
         "CR"      : buttons["CR"],
-        "TD"      : buttons["TD"],
+        "TG"      : buttons["TG"],
         "BALA"    : buttons["BALA"],
         "ACP"     : buttons["ACP"],
         "RESET"   : buttons["RESET"],

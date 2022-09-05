@@ -24,6 +24,9 @@ class PartModel(FloatLayout):
                         child.rotateBy(initAngle)
                         child.updateAngle()
 
+    def getAngle(self):
+        return self.__target[-1].getAngle
+
     def rotate(self, value):
         for target in self.__target:
             target.rotateBy(value)

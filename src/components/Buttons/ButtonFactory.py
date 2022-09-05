@@ -26,10 +26,10 @@ class ButtonFactory:
         # breakpoint()
         if context == CONTEXT_POOL.ATTACK_DISC:
             for att, src, role in zip(
-                (CR, TD, BALA, ACP),
+                (CR, TG, BALA, ACP),
                 (
                     IMAGES.BUTTONS.CR,
-                    IMAGES.BUTTONS.TD,
+                    IMAGES.BUTTONS.TG,
                     IMAGES.BUTTONS.BALA,
                     IMAGES.BUTTONS.ACP
                 ),
@@ -57,7 +57,7 @@ class ButtonFactory:
                 (DS, TM),
                 (
                     IMAGES.BUTTONS.CR,
-                    IMAGES.BUTTONS.TD
+                    IMAGES.BUTTONS.TG
                 ),
                 (
                     FocusButton,

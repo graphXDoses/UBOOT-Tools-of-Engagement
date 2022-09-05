@@ -1,6 +1,6 @@
 from configparser import ConfigParser
 from src.constants.EventNames import EVENTS
-from src.constants.RaobfNames import CR, TD, BALA, ACP
+from src.constants.RaobfNames import CR, TG, BALA, ACP
 from src.constants.UI import active_button, not_assigned, default_context, CONTEXT_POOL
 from src.lib.EventBus import EventBus
 

@@ -1,4 +1,5 @@
 from kivy.graphics import Color, Rectangle
+from kivy.uix.floatlayout import FloatLayout
 from src.constants.Colors import (
     BUTTON_NORMAL_BACKGROUND_COLOR,
     BUTTON_ILLUMINATION_BACKGROUND_COLOR,
@@ -22,6 +23,12 @@ class FocusButton(Button):
     @staticmethod
     def setFocus(i=None):
         i.canvas["hasFocus"] = 1.0
+        def rec(obj, iterNum):
+            if not obj.parent is None and iterNum < 4:
+                if isinstance(obj.parent, FloatLayout): print(obj.parent)
+                iterNum += 1
+                rec(obj.parent, iterNum)
+        rec(i, 0)
         EventBus.trigger(EVENTS.CHANGE_FOCUS, i)
 
     def __focusChangeCallback(self, button):
