@@ -1,3 +1,11 @@
+########################################################
+# Images.py
+# Xristos Dosis
+# August 6, 2022
+#
+# All image references.
+########################################################
+
 from kivy.atlas import Atlas
 from src.constants.RaobfNames import *
 from src.lib.jsDictionary import JSDictionary

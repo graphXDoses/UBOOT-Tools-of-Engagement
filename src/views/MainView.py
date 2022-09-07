@@ -1,3 +1,12 @@
+########################################################
+# MainView.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Main view class. Works as a container for UI elements.
+########################################################
+
+
 from kivy.uix.screenmanager import Screen
 from kivy.uix.boxlayout import BoxLayout
 from src.components.Layouts.ToolbarLayout import ToolbarLayout

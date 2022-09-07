@@ -1,3 +1,12 @@
+########################################################
+# HelpAndContextLayout.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Extends the Kivy BoxLayout class. Ensures floating
+# of children buttons to respective sides.
+########################################################
+
 from kivy.uix.boxlayout import BoxLayout
 from kivy.graphics import Color, Line
 from kivy.vector import Vector

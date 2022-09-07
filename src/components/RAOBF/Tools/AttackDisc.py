@@ -1,38 +1,49 @@
-from src.components.RAOBF.Parts.Entity import Entity
-from src.components.RAOBF.Parts.PartModel import PartModel
+########################################################
+# AttackDisc.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Extends the Tool class. Instantiates all relevant parts
+# and appends them to the layout. Manipulates children
+# parts with own callback functions for focus and
+# rotation difference.
+########################################################
+
+from src.components.RAOBF.Base.Part import Part
+from src.components.RAOBF.Base.Tool import Tool
 from src.constants.RaobfNames import RB, CR, TG, BALA, ACP
 from src.constants.Images import IMAGES
 from src.constants.EventNames import EVENTS
 from src.lib.EventBus import EventBus
 
 
-class AttackDisc(PartModel):
+class AttackDisc(Tool):
 
     def __init__(self, context):
         super().__init__(context)
 
-        self._RB   = Entity(
+        self._RB   = Part(
             IMAGES.ATTACK_DISC.RB,
             name = RB,
             context = self.context,
             isFixed = True
         )
-        self._CR   = Entity(
+        self._CR   = Part(
             IMAGES.ATTACK_DISC.CR,
             name = CR,
             context = self.context
         )
-        self._TG   = Entity(
+        self._TG   = Part(
             IMAGES.ATTACK_DISC.TG,
             name = TG,
             context = self.context
         )
-        self._BALA = Entity(
+        self._BALA = Part(
             IMAGES.ATTACK_DISC.BALA,
             name = BALA,
             context = self.context
         )
-        self._ACP  = Entity(
+        self._ACP  = Part(
             IMAGES.ATTACK_DISC.ACP,
             name = ACP,
             context = self.context

@@ -1,3 +1,15 @@
+########################################################
+# ToolsAreaWidget.py
+# Xristos Dosis
+# August 6, 2022
+#
+# UI layout for tools. Instanciates both AttackDisc and
+# SlideRuleDisc with the corresponding context. Also
+# handles the recieved touch input and communicates
+# the rotation difference with respect to a cardinal up
+# vector, to active tool.
+########################################################
+
 from kivy.vector import Vector
 from kivy.uix.boxlayout import BoxLayout
 from src.constants.RaobfNames import *
@@ -11,7 +23,6 @@ class ToolsAreaWidget(BoxLayout):
 
     def __init__(self, **kwargs):
         super(ToolsAreaWidget, self).__init__(orientation="vertical")
-        # self.hasSnapOn      = None
         self.cardinalVector = Vector((0, 1))
         self.attackDisc     = AttackDisc(CONTEXT_POOL.ATTACK_DISC)
         self.slideRuleDisc  = SlideRuleDisc(CONTEXT_POOL.SLIDE_RULE_DISC)

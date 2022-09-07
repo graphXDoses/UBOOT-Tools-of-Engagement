@@ -1,3 +1,12 @@
+########################################################
+# ControlsLayout.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Extends the Kivy BoxLayout class. Ensures the proper
+# spacing between children buttons.
+########################################################
+
 from kivy.clock import mainthread
 from kivy.uix.boxlayout import BoxLayout
 from kivy.graphics import Color, Line
@@ -19,11 +28,6 @@ class ControlsLayout(BoxLayout):
         self.hasLink     = False
         self.restoreLink = False
 
-        # self.buttons = {
-        #     CONTEXT_POOL.ATTACK_DISC     : list(),
-        #     CONTEXT_POOL.SLIDE_RULE_DISC : list()
-        # }
-
         self.spacing = padding_value
         self.padding = [0, 0, 0, padding_value]
         self.height += sum((self.padding[1], self.padding[3]))
@@ -31,13 +35,9 @@ class ControlsLayout(BoxLayout):
         EventBus.on(EVENTS.CHANGE_CONTEXT, self.__changeContext)
         EventBus.on(EVENTS.ENTER_LINK, self.__addLink)
         EventBus.on(EVENTS.BREAK_LINK, self.__removeLink)
-        # self.canvas.before.add(Color(*ICON_ILLUMINATION_BACKGROUND_COLOR))
 
     def __changeContext(self, context):
         self.clear_widgets()
-        # if len(self.buttons[context]) == 0:
-        #     self.buttons[context] = [button for button in ButtonFactory().controls(context)]
-        # for button in self.buttons[context]:
         for button in ButtonFactory().controls(context):
             self.add_widget(button)
 

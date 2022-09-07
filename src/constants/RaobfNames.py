@@ -1,3 +1,11 @@
+########################################################
+# RaobfNames.py
+# Xristos Dosis
+# August 6, 2022
+#
+# All RAOBF names.
+########################################################
+
 # Front Side
 
 RB   = "Relative Bearing"

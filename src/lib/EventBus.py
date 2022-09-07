@@ -1,3 +1,13 @@
+########################################################
+# EventBus.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Eventbus singleton class, responsible for binding
+# events to callback functions from observer/reciever
+# objects.
+########################################################
+
 from src.lib.EventModel import EventModel
 
 class EventBus:

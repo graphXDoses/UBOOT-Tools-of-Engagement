@@ -1,9 +1,18 @@
+########################################################
+# Tool.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Extends the Kivy FloatLayout class. Works as basis for
+# all tool objects.
+########################################################
+
 from kivy.uix.floatlayout import FloatLayout
 from src.constants.EventNames import EVENTS
 from src.lib.EventBus import EventBus
 from src.lib.AppConfig import AppConfig
 
-class PartModel(FloatLayout):
+class Tool(FloatLayout):
 
     def __init__(self, context):
         super().__init__()

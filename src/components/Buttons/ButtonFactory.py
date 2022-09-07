@@ -1,4 +1,12 @@
-#from kivy.uix.button import Button as PlainBTN
+########################################################
+# ButtonFactory.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Button factory class. Works as a blueprint for
+# creating contextualized UI elements, in batches.
+########################################################
+
 from src.constants.RaobfNames import *
 from src.constants.UI import CONTEXT_POOL, not_assigned
 from src.constants.Images import IMAGES
@@ -23,7 +31,6 @@ class ButtonFactory:
 
     def controls(self, context):
         self.buttons = list()
-        # breakpoint()
         if context == CONTEXT_POOL.ATTACK_DISC:
             for att, src, role in zip(
                 (CR, TG, BALA, ACP),

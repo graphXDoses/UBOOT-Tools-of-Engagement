@@ -1,3 +1,11 @@
+########################################################
+# EventModel.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Event base class.
+########################################################
+
 class EventModel:
 
     def __init__(self, name:str='')->None:

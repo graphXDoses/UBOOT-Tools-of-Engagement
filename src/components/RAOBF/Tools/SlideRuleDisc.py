@@ -1,28 +1,39 @@
-from src.components.RAOBF.Parts.Entity import Entity
-from src.components.RAOBF.Parts.PartModel import PartModel
+########################################################
+# SlideRuleDisc.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Extends the Tool class. Instantiates all relevant parts
+# and appends them to the layout. Manipulates children
+# parts with own callback functions for focus and
+# rotation difference.
+########################################################
+
+from src.components.RAOBF.Base.Part import Part
+from src.components.RAOBF.Base.Tool import Tool
 from src.constants.RaobfNames import AOB, DS, TM
 from src.constants.Images import IMAGES
 from src.constants.EventNames import EVENTS
 from src.lib.EventBus import EventBus
 
 
-class SlideRuleDisc(PartModel):
+class SlideRuleDisc(Tool):
 
     def __init__(self, context):
         super().__init__(context)
 
-        self._AOB   = Entity(
+        self._AOB   = Part(
             IMAGES.SLIDE_RULE_DISC.AOB,
             name = AOB,
             context = self.context,
             isFixed = True
         )
-        self._DS   = Entity(
+        self._DS   = Part(
             IMAGES.SLIDE_RULE_DISC.DS,
             name = DS,
             context = self.context
         )
-        self._TM   = Entity(
+        self._TM   = Part(
             IMAGES.SLIDE_RULE_DISC.TM,
             name = TM,
             context = self.context

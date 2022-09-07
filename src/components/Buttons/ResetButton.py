@@ -1,3 +1,12 @@
+########################################################
+# ResetButton.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Derivative class of Button, dedicated to triggering
+# 'RESET' events.
+########################################################
+
 from kivy.graphics import Color, Rectangle
 from src.constants.Colors import (
     BUTTON_NORMAL_BACKGROUND_COLOR,

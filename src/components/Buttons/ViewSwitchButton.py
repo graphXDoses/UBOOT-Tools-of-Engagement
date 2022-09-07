@@ -1,3 +1,12 @@
+########################################################
+# ViewSwitchButton.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Derivative class of Button, dedicated to triggering
+# 'CHANGE_VIEW' events.
+########################################################
+
 from src.constants.EventNames import EVENTS
 from src.constants.UI import VIEWS_POOL
 from src.lib.EventBus import EventBus

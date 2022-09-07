@@ -1,3 +1,13 @@
+########################################################
+# ButtonModel.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Extention of kivy Button class. Works as basis
+# for all other button types, configuring rendering
+# and basic behaviour.
+########################################################
+
 from kivy.clock import mainthread
 from kivy.uix.screenmanager import Screen
 from kivy.vector import Vector

@@ -1,6 +1,13 @@
-class JSDictionary:
-    """docstring for JSDictionary."""
+########################################################
+# jsDictionary.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Javasript style dictionary.
+########################################################
 
+class JSDictionary:
+    
     def __init__(self, target:dict):
         for k, v in zip(target.keys(), target.values()):
             if isinstance(v, dict):

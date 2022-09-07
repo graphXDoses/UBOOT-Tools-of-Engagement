@@ -1,3 +1,17 @@
+########################################################
+# Utils.py
+# Xristos Dosis
+# August 6, 2022
+#
+# All application utillities.
+########################################################
+
+########################################################
+# Cycler class:
+# Creates a generator that cycles through a collection
+# of iterables indefinatelly and returns the next
+# iterable upon calling.
+########################################################
 class Cycler:
 
     def __init__(self, options, start=0):

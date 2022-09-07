@@ -1,3 +1,11 @@
+########################################################
+# InfoLayout.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Extends the Kivy BoxLayout class.
+########################################################
+
 from kivy.clock import mainthread
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
@@ -30,7 +38,3 @@ class InfoLayout(BoxLayout):
 
     def updateLabelCallback(self, object):
         return
-        # if isinstance(button.attachment, list):
-        #     self.InfoLabel.text = button.attachment[0]
-        # else:
-        #     self.InfoLabel.text = button.attachment

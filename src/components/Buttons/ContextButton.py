@@ -1,3 +1,12 @@
+########################################################
+# ContextButton.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Derivative class of Button, dedicated to triggering
+# 'CHANGE_CONTEXT' events.
+########################################################
+
 from kivy.clock import mainthread
 from kivy.graphics import Color, Rectangle
 from src.constants.UI import CONTEXT_POOL, default_context

@@ -1,3 +1,12 @@
+########################################################
+# FocusButton.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Derivative class of Button, dedicated to triggering
+# 'CHANGE_FOCUS' events.
+########################################################
+
 from kivy.graphics import Color, Rectangle
 from kivy.uix.floatlayout import FloatLayout
 from src.constants.Colors import (
@@ -25,7 +34,6 @@ class FocusButton(Button):
         i.canvas["hasFocus"] = 1.0
         def rec(obj, iterNum):
             if not obj.parent is None and iterNum < 4:
-                if isinstance(obj.parent, FloatLayout): print(obj.parent)
                 iterNum += 1
                 rec(obj.parent, iterNum)
         rec(i, 0)

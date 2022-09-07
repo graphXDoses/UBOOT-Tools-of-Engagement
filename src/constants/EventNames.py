@@ -1,3 +1,11 @@
+########################################################
+# EventNames.py
+# Xristos Dosis
+# August 6, 2022
+#
+# All event names.
+########################################################
+
 from src.lib.jsDictionary import JSDictionary
 
 EVENTS = JSDictionary({

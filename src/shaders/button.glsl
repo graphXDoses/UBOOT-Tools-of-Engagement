@@ -1,4 +1,11 @@
-// anything before a meaningful section such as this comment are ignored
+/***************************************************************************\
+ button.glsl
+ Xristos Dosis
+ August 6, 2022
+
+ Source code for vertex and fragment shaders of the Button material,
+ used for customly rasterized buttons.
+\***************************************************************************/
 
 ---VERTEX SHADER--- // vertex shader starts here
 #ifdef GL_ES

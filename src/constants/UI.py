@@ -1,3 +1,11 @@
+########################################################
+# UI.py
+# Xristos Dosis
+# August 6, 2022
+#
+# All UI constants.
+########################################################
+
 from src.lib.jsDictionary import JSDictionary
 
 active_button   = "active_button"
@@ -11,6 +19,4 @@ VIEWS_POOL   = JSDictionary({
     "SETTINGSVIEW"    : "settings"
 })
 default_view    = VIEWS_POOL.MAINVIEW
-# default_view    = VIEWS_POOL.SETTINGSVIEW
 default_context = CONTEXT_POOL.ATTACK_DISC
-# currentContext  = not_assigned

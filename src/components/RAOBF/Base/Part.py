@@ -1,10 +1,19 @@
+########################################################
+# Part.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Extends FixedASRImage class. Works as basis for all
+# part objects.
+########################################################
+
 from kivy.graphics import Rotate, PushMatrix, PopMatrix
 from src.constants.EventNames import EVENTS
 from src.lib.fixedASRImage import FixedASRImage
 from src.lib.EventBus import EventBus
 from src.lib.AppConfig import AppConfig
 
-class Entity(FixedASRImage):
+class Part(FixedASRImage):
 
     def __init__(self, img, name, context, isFixed=False):
         super().__init__(source=img)

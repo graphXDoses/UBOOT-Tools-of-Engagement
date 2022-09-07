@@ -1,3 +1,13 @@
+########################################################
+# AppConfig.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Application configuration class. Reads and writes
+# from/to app.ini and stores data related to the
+# application.
+########################################################
+
 from configparser import ConfigParser
 from src.constants.EventNames import EVENTS
 from src.constants.RaobfNames import CR, TG, BALA, ACP

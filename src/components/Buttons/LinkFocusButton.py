@@ -1,3 +1,14 @@
+########################################################
+# LinkFocusButton.py
+# Xristos Dosis
+# August 6, 2022
+#
+# Derivative class of Button, dedicated to triggering
+# 'CHANGE_FOCUS' and 'ENTER_LINK|BREAK_LINK' events.
+# On 'ENTER_LINK' event, renders lines indicative of
+# linking/locking between a couple of focus buttons.
+########################################################
+
 from kivy.graphics import Color, Rectangle
 from src.constants.Colors import (
     BUTTON_NORMAL_BACKGROUND_COLOR,
