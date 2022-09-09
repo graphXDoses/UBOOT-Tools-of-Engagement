@@ -24,7 +24,7 @@ class ButtonFactory:
     def helpContext(self):
         self.buttons = list()
 
-        self.buttons.append(ViewSwitchButton(IMAGES.BUTTONS.HELP))
+        self.buttons.append(ViewSwitchButton(IMAGES.CONTEXT.HELP))
         self.buttons.append(ContextButton(source=(IMAGES.CONTEXT.FRONT, IMAGES.CONTEXT.BACK)))
 
         return self.buttons
@@ -47,7 +47,7 @@ class ButtonFactory:
                     FocusButton
                 )
             ):
-                self.buttons.append(role(source=src, attachment=att, context=CONTEXT_POOL.ATTACK_DISC))
+                self.buttons.append(role(source=src, attachment=repr(att), context=CONTEXT_POOL.ATTACK_DISC))
 
             activeButton = AppConfig.getInitActiveButton()
             if activeButton == not_assigned:
@@ -71,7 +71,7 @@ class ButtonFactory:
                     FocusButton
                 )
             ):
-                self.buttons.append(role(source=src, attachment=att, context=CONTEXT_POOL.SLIDE_RULE_DISC))
+                self.buttons.append(role(source=src, attachment=repr(att), context=CONTEXT_POOL.SLIDE_RULE_DISC))
 
             activeButton = AppConfig.getInitActiveButton()
             if activeButton == not_assigned:

@@ -13,7 +13,6 @@ from src.components.Layouts.ToolbarLayout import ToolbarLayout
 from src.components.InfoBars.InfoButtons import InfoButtons
 from src.components.InfoBars.InfoContext import InfoContext
 from src.components.RAOBF.ToolsAreaWidget import ToolsAreaWidget
-from src.constants.RaobfNames import *
 from src.constants.UI import not_assigned, default_context, CONTEXT_POOL
 from src.constants.EventNames import EVENTS
 from src.lib.EventBus import EventBus

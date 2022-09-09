@@ -12,7 +12,6 @@
 
 from kivy.vector import Vector
 from kivy.uix.boxlayout import BoxLayout
-from src.constants.RaobfNames import *
 from src.constants.UI import not_assigned, default_context, CONTEXT_POOL
 from src.constants.EventNames import EVENTS
 from src.lib.EventBus import EventBus

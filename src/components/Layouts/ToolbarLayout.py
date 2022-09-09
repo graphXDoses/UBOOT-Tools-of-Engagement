@@ -8,7 +8,6 @@
 
 from kivy.uix.boxlayout import BoxLayout
 from kivy.graphics import Color, Rectangle
-from src.constants.RaobfNames import CR, TG, BALA, ACP
 from src.constants.Colors import TOOLBAR_BACKGROUND
 from src.components.Layouts.ControlsLayout import ControlsLayout
 from src.components.Layouts.HelpAndContextLayout import HelpAndContextLayout
